@@ -39,7 +39,7 @@ import {
 import { Login } from "pages/login";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { parseJwt } from "utils/parse-jwt";
-import { Header } from "./components/header";
+import { Header } from "./components/layout/header";
 import { ColorModeContextProvider } from "./contexts/color-mode";
 
 const axiosInstance = axios.create();
@@ -135,7 +135,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <GitHubBanner />
+      {/* <GitHubBanner /> */}
       <RefineKbarProvider>
         <ColorModeContextProvider>
           <CssBaseline />
@@ -171,7 +171,7 @@ function App() {
               options={{
                 syncWithLocation: true,
                 warnWhenUnsavedChanges: true,
-                projectId: "VgrNNO-qvlqYl-hOEctR",
+                projectId: "1ggc0O-FLhDGF-ubfssP",
               }}
             >
               <Routes>
